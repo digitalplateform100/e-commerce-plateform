@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <div>
+        <h2>Create an Account</h2>
+        
+        <form action="/submit-signup" method="POST">
+            <div>
+                <label for="fullname">Full Name</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Create a password" required minlength="8">
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="confirm-password">Confirm Password</label><br>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required minlength="8">
+            </div>
+            
+            <br>
+
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+            
+            <br>
+
+            <div>
+                Already have an account? <a href="/login">Log in</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
